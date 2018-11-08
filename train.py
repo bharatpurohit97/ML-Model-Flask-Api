@@ -6,7 +6,7 @@ from sklearn.metrics import mean_squared_error
 from sklearn import linear_model
 
 #loading my data and splitting it into training and testing pandas
-df = pd.read_csv('winequality-red.csv', delimiter=";", encoding='utf-8')
+df = pd.read_csv('Dataset/winequality-red.csv', delimiter=";", encoding='utf-8')
 X_train, X_test, y_train, y_test = train_test_split(df.drop('quality', axis=1), df['quality'], test_size=0.25, random_state=1)
 
 #creating a model and training it
